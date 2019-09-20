@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import CharacterCard from "./CharacterCard";
 import axios from "axios";
 export default function CharacterList() {
@@ -27,6 +28,8 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/character">Character List</NavLink>
       <h2>{character.map(person => {
         return <CharacterCard key={person.id} name={person.name} species={person.species} status={person.status} origin={person.origin} image={person.image} />
       })}</h2>

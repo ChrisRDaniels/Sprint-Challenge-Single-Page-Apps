@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage";
 import SearchForm from "./components/SearchForm.js";
@@ -8,9 +9,9 @@ import CharacterList from "./components/CharacterList.js";
   return (
     <main>
       <Header />
-      <WelcomePage />
+      <Route exact path="/" component={WelcomePage} />
+      <Route exact path ="/character/" component={CharacterList} />
       <SearchForm />
-      <CharacterList />
     </main>
   );
 }
