@@ -47,4 +47,10 @@ main {
 
 header h1 {
   text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Lacquer', sans-serif;
+}
+
+h2 {
+  font-family: 'Lacquer', sans-serif;
 }

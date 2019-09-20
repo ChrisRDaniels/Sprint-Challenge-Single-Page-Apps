@@ -1,5 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+
+const NavStyled = styled.nav`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid lightgrey;
+  font-family: 'Lacquer', sans-serif;
+`;
 
 export default function WelcomePage() {
   return (
@@ -11,8 +23,12 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/character">Character List</NavLink>
+        <center>
+        <NavStyled>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/character">Character List</NavLink>
+        </NavStyled>
+        </center>
       </header>
     </section>
   );
