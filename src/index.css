@@ -14,6 +14,17 @@ main {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+.character-list {
+  text-align: center;
+}
+
+.card-body {
+  background: #ddd;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .grid-view {
   display: flex;
   flex-wrap: wrap;
@@ -27,13 +38,19 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Lacquer', sans-serif;
+}
+
+h2 {
+  font-family: 'Lacquer', sans-serif;
 }
